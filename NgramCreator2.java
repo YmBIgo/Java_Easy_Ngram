@@ -19,6 +19,7 @@ public class NgramCreator2 {
 			if (ngram_map.containsKey(current_text)) {
 				ArrayList<String> doc_array = ngram_map.get(current_text);
 				doc_array.add(current_doc_pos);
+				ngram_map.put(current_text, doc_array);
 			} else {
 				ArrayList<String> doc_array = new ArrayList<String>();
 				doc_array.add(current_doc_pos);
